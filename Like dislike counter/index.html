@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like Dislike Counter</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://use.fontawesome.com/85f61ccdb5.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="box">
+        <div class="icons">
+            <div class="like">
+            <i  onclick="btn()" class="fas fa-heart icon"></i>
+                <br>
+            <input type="number" id="likeCounter"class="num" value="0">    
+            </div>
+            
+            <div class="dislike">
+            <i class="fas fa-heart-broken  icon" onclick="disbtn()"></i>
+                <br>
+            <input type="number" value="0" id="dislikeCounter" class="num">
+            </div>
+
+            <div class="subs">
+                Subscribe
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="man.js"></script>
+</body>
+</html>

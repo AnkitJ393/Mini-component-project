@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+input[type="checkbox"]{
+    width: 190px;
+    height: 90px;
+    background: transparent;
+    appearance:none;
+    border: 5px solid whitesmoke;
+    border-radius: 9999px;;
+    transition: all 0.3s ease-in;
+
+    &:checked{
+        border-color:#3a1d6d;
+        transition: all 0.3s ease-in;
+        background-color:#3a1d6d;
+
+    }
+    &::before{
+        content: "\f186";
+        font-family: 'Font Awesome 5 Free';
+        font-size: 3rem;
+        font-weight: 900;
+        background: grey;
+        border-radius: 50%;
+        display: flex;
+        width: 76px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 2px;
+        height: 76px;
+        transform: rotate(0deg);
+        color: lightyellow;
+        left: 0;
+        transition: all 0.2s linear;
+    }
+    &:checked::before{
+        transform: rotate(205deg);
+        left:100px;
+        color: white;
+        background-color: black;
+    }
+
+}
+
+.nightmode{
+    transition:all 0.2s linear;
+    background: black;
+}
